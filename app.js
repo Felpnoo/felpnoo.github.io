@@ -20,7 +20,6 @@ const PORTFOLIO_DATA = {
     githubUrl: "https://github.com/Felpnoo",
     linkedinUrl: "https://www.linkedin.com/in/felipess-dev",
     cvDownloadUrl: "assets/cv/FELIPE-DOS-SANTOS-SILVA-CV.pdf",
-    avatarImage: "assets/images/avatar.jpg",
     bioIntro: "Graduando em Ciência da Computação (7º Semestre) na UERR e Desenvolvedor focado em Automação de Processos (RPA), Infraestrutura Cloud e Linux.",
     bioDescription: "Possuo sólido background em administração Linux (NixOS / Arch), Shell Scripting e fundamentos de DevOps. Experiência prática combinando desenvolvimento de software com resolução de incidentes de infraestrutura para otimização de fluxos de trabalho. Certificado em Arquitetura Cloud, Python Development e Java pela FIAP. Apaixonado por criar ambientes reproduzíveis e solucionar desafios complexos por meio de código.",
     stats: [

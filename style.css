@@ -686,44 +686,72 @@ h1, h2, h3, h4, h5, h6 {
 .about-image-wrapper {
   position: relative;
   max-width: 400px;
+  width: 100%;
   margin-inline: auto;
 }
 
-.about-image-card {
+.about-profile-card {
   position: relative;
   border-radius: var(--radius-lg);
-  overflow: hidden;
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-lg);
-  background: var(--bg-surface-2);
+  background: var(--bg-surface-1);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all var(--transition-normal);
 }
 
-.about-image-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  transition: transform var(--transition-slow);
+.about-profile-card:hover {
+  border-color: var(--brand-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg), 0 0 25px var(--brand-accent-glow);
 }
 
-.about-image-card:hover img {
-  transform: scale(1.03);
-}
-
-.about-image-badge {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 1.25rem;
-  right: 1.25rem;
-  padding: 0.85rem 1rem;
-  background: var(--bg-glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  font-size: 0.875rem;
+.profile-monogram-badge {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  box-shadow: 0 6px 20px var(--brand-accent-glow);
+  margin-bottom: 1rem;
+}
+
+.profile-card-details strong {
+  font-size: 1.15rem;
+  display: block;
+}
+
+.profile-role-tag {
+  font-size: 0.85rem;
+  color: var(--brand-accent);
+  font-weight: 600;
+  margin-block: 0.25rem 0.5rem;
+}
+
+.profile-location-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.profile-quick-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-block: 1rem 0.5rem;
 }
 
 .about-text-content p {
@@ -1241,11 +1269,17 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
 }
 
-.github-avatar {
-  width: 3.5rem;
-  height: 3.5rem;
+.github-avatar-badge {
+  width: 3.25rem;
+  height: 3.25rem;
   border-radius: 50%;
+  background: var(--brand-accent-subtle);
   border: 2px solid var(--brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-accent);
+  flex-shrink: 0;
 }
 
 .github-metrics-grid {
