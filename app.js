@@ -600,12 +600,15 @@ function renderCertificates(selectedInstitution = "all") {
     </div>
   `).join("");
 
-  container.querySelectorAll(".view-cert-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const img = btn.getAttribute("data-img");
-      const title = btn.getAttribute("data-title");
-      const inst = btn.getAttribute("data-inst");
-      openCertModal(img, title, inst);
+  container.querySelectorAll(".certificate-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const btn = card.querySelector(".view-cert-btn");
+      if (btn) {
+        const img = btn.getAttribute("data-img");
+        const title = btn.getAttribute("data-title");
+        const inst = btn.getAttribute("data-inst");
+        openCertModal(img, title, inst);
+      }
     });
   });
 }
