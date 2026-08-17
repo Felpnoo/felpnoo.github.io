@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe dos Santos Silva | Python Developer & Linux Specialist</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Portfólio de Felipe dos Santos Silva - Graduando em Ciência da Computação (UERR), Python Developer focado em Automação (RPA), Linux (NixOS/Arch) e Infraestrutura Cloud.">
+  <meta name="keywords" content="Felipe dos Santos Silva, Python Developer, RPA, Linux Specialist, NixOS, Docker, Cloud Architecture, FIAP, UERR, Portfolio">
+  <meta name="author" content="Felipe dos Santos Silva">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Felipe dos Santos Silva | Python Developer & Linux Specialist">
+  <meta property="og:description" content="Portfólio com vitrine de projetos, certificações oficiais FIAP/Udemy e trajetória em automação e infraestrutura.">
+  <meta property="og:image" content="assets/images/project-ecommerce.jpg">
+
+  <!-- Color Scheme & Anti-FOUC script -->
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function() {
+      const stored = localStorage.getItem("site-theme");
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = stored || (systemDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="site-logo" aria-label="Voltar ao início">
+        <span class="logo-badge">FS</span>
+        <span class="dyn-name">Felipe dos Santos Silva</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+        <a href="#hero" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#certificates" class="nav-link">Certificados</a>
+        <a href="#experience" class="nav-link">Carreira</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Alternar tema escuro/claro">
+          <svg id="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="assets/cv/FELIPE-DOS-SANTOS-SILVA-CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm dyn-cv-link" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Baixar CV
+        </a>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Abrir Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>Disponível para novos projetos e oportunidades</span>
+          </div>
+
+          <h1 class="hero-title">
+            Automatizando processos e construindo infraestrutura escalável como <br>
+            <span class="hero-role-wrapper">
+              <span id="typewriter-text">Python Developer & RPA</span><span class="typewriter-cursor"></span>
+            </span>
+          </h1>
+
+          <p class="hero-description" id="hero-bio">
+            Graduando em Ciência da Computação (7º Semestre) na UERR e Desenvolvedor focado em Automação de Processos (RPA), Infraestrutura Cloud e Linux.
+          </p>
+
+          <div class="hero-actions">
+            <a href="assets/cv/FELIPE-DOS-SANTOS-SILVA-CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary dyn-cv-link" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Baixar Currículo (PDF)
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Ver Projetos
+            </a>
+            <a href="#certificates" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              Certificados (15+)
+            </a>
+          </div>
+
+          <!-- Quick Metrics -->
+          <div class="hero-stats" id="hero-stats-container">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </div>
+
+        <!-- Hero Terminal Preview Card -->
+        <div class="hero-card-preview">
+          <div class="floating-tech-badge badge-top-right">
+            <span>⚡ Linux & NixOS Flakes</span>
+          </div>
+
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-title">felipe_profile.py</span>
+              <span style="font-size: 0.75rem; color: var(--text-light);">UTF-8</span>
+            </div>
+            <pre class="terminal-body"><code><span class="code-keyword">class</span> <span class="code-var">DeveloperProfile</span>:
+    <span class="code-var">name</span> = <span class="code-string">"Felipe dos Santos Silva"</span>
+    <span class="code-var">academic</span> = <span class="code-string">"B.Sc. Ciência da Computação (UERR)"</span>
+    <span class="code-var">core_stack</span> = [
+        <span class="code-string">"Python"</span>, <span class="code-string">"Selenium / RPA"</span>,
+        <span class="code-string">"NixOS / Arch"</span>, <span class="code-string">"Cloud Architecture"</span>
+    ]
+    <span class="code-var">mindset</span> = <span class="code-string">"Reproducibility & Automation"</span>
+
+    <span class="code-keyword">def</span> <span class="code-fn">optimize_workflow</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"🚀 Process Automated & Monitored"</span></code></pre>
+            <div class="terminal-footer">
+              <span>● Shell: zsh / bash</span>
+              <span>FIAP & UERR Certified ✓</span>
+            </div>
+          </div>
+
+          <div class="floating-tech-badge badge-bottom-left">
+            <span>🛡️ System Hardening & SLA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Perfil Técnico</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">Engenharia de software, automação de processos e infraestrutura reproduzível.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <div class="about-image-card">
+              <img src="assets/images/avatar.jpg" alt="Foto de Perfil de Felipe dos Santos Silva" class="dyn-avatar" loading="lazy">
+              <div class="about-image-badge">
+                <div>
+                  <strong class="dyn-name">Felipe dos Santos Silva</strong>
+                  <p style="font-size: 0.75rem; color: var(--text-light); margin: 0;">Boa Vista, Roraima 📍</p>
+                </div>
+                <span class="status-dot"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <p id="about-description">
+              Graduando em Ciência da Computação (7º Semestre) pela Universidade Estadual de Roraima (UERR), combino conhecimento aprofundado em administração de sistemas Linux (NixOS, Arch), desenvolvimento Python e arquitetura cloud para construir soluções confiáveis.
+            </p>
+            <p>
+              Minha experiência abrange suporte operacional a infraestruturas de missão crítica, desenvolvimento de bots de RPA, automação de rotinas em Shell Scripting e docência em programação.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Automação de Processos (RPA)</h3>
+                <p class="pillar-desc">Criação de robôs com Selenium, Pandas e OpenCV para automatizar fluxos repetitivos.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Linux & Infraestrutura</h3>
+                <p class="pillar-desc">Administração avançada em NixOS e Arch, configuração declarativa e Shell Scripting.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Cloud & DevOps</h3>
+                <p class="pillar-desc">Conceitos AWS, Docker, pipelines CI/CD com GitHub Actions e cultura ágil.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Operação Crítica & SLA</h3>
+                <p class="pillar-desc">Resolução de incidentes de Nível 2 sob alta criticidade mantendo SLA rigoroso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & TECH STACK SECTION
+         ========================================================================== -->
+    <section class="section" id="skills" style="background: var(--bg-surface-2);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competências Técnicas</span>
+          <h2 class="section-title">Habilidades & Tecnologias</h2>
+          <p class="section-subtitle">Ferramentas e linguagens que domino para desenvolver automações e gerenciar infraestruturas.</p>
+        </div>
+
+        <div class="skills-filter-container">
+          <button class="filter-btn skill-filter-btn active" data-category="all">Todas as Tecnologias</button>
+          <button class="filter-btn skill-filter-btn" data-category="languages">Linguagens & Back-end</button>
+          <button class="filter-btn skill-filter-btn" data-category="infra">Infraestrutura & Linux</button>
+          <button class="filter-btn skill-filter-btn" data-category="focus">RPA & DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SHOWCASE SECTION
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfólio Prático</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">Aplicações práticas focadas em automação, robôs de extração, portais web e infraestrutura como código.</p>
+        </div>
+
+        <div class="projects-controls">
+          <div class="projects-search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="search" id="projects-search-input" placeholder="Buscar projetos por tecnologia, Python, Linux, RPA..." aria-label="Buscar projetos">
+          </div>
+
+          <div class="skills-filter-container" style="margin-bottom: 0;">
+            <button class="filter-btn project-filter-btn active" data-category="all">Todos os Projetos</button>
+            <button class="filter-btn project-filter-btn" data-category="rpa">Automação & RPA</button>
+            <button class="filter-btn project-filter-btn" data-category="infra">Linux & DevOps</button>
+            <button class="filter-btn project-filter-btn" data-category="backend">Back-end & Django</button>
+            <button class="filter-btn project-filter-btn" data-category="ai">IA & OCR</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATES & COURSES SECTION
+         ========================================================================== -->
+    <section class="section" id="certificates" style="background: var(--bg-surface-2);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Educação Contínua</span>
+          <h2 class="section-title">Certificações & Cursos</h2>
+          <p class="section-subtitle">Mais de 15 certificações oficiais emitidas por instituições de referência como FIAP, Udemy e IFRS. Clique para visualizar o certificado.</p>
+        </div>
+
+        <div class="skills-filter-container">
+          <button class="filter-btn cert-filter-btn active" data-institution="all">Todos os Certificados (15)</button>
+          <button class="filter-btn cert-filter-btn" data-institution="fiap">FIAP (10)</button>
+          <button class="filter-btn cert-filter-btn" data-institution="udemy">Udemy (4)</button>
+        </div>
+
+        <div class="certificates-grid" id="certificates-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & CAREER TIMELINE
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Histórico Profissional</span>
+          <h2 class="section-title">Experiência & Trajetória</h2>
+          <p class="section-subtitle">Minha trajetória em suporte de infraestrutura crítica, docência em programação e desenvolvimento.</p>
+        </div>
+
+        <div class="timeline-container" id="timeline-container">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GITHUB STATS CARD WIDGET
+         ========================================================================== -->
+    <section class="section" id="github-stats" style="background: var(--bg-surface-2);">
+      <div class="container">
+        <div class="github-widget-card">
+          <div class="github-widget-header">
+            <div class="github-user-info">
+              <img src="assets/images/avatar.jpg" alt="GitHub Avatar" class="github-avatar dyn-avatar">
+              <div>
+                <h3 style="font-size: 1.15rem; margin-bottom: 0.2rem;" class="dyn-name">Felipe dos Santos Silva</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">@felpnoo • GitHub Developer</p>
+              </div>
+            </div>
+            <a href="https://github.com/felpnoo" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="hero-github-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              Perfil no GitHub
+            </a>
+          </div>
+
+          <div class="github-metrics-grid">
+            <div class="github-metric-box">
+              <div class="github-metric-val">Python & Linux</div>
+              <div class="github-metric-label">Especialidade Principal</div>
+            </div>
+            <div class="github-metric-box">
+              <div class="github-metric-val">15+</div>
+              <div class="github-metric-label">Certificados Concluídos</div>
+            </div>
+            <div class="github-metric-box">
+              <div class="github-metric-val">NixOS / Arch</div>
+              <div class="github-metric-label">Ambientes Declarativos</div>
+            </div>
+            <div class="github-metric-box">
+              <div class="github-metric-val">100%</div>
+              <div class="github-metric-label">Disponibilidade no Pages</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Vamos Conversar?</h2>
+          <p class="section-subtitle">Tem uma oportunidade, projeto de automação ou deseja trocar experiências técnicas? Mande uma mensagem!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">E-mail Direto</span>
+                <p class="contact-val">felpssilvam@gmail.com</p>
+              </div>
+              <button class="btn btn-outline btn-sm copy-email-btn" title="Copiar e-mail">Copiar</button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Localização</span>
+                <p class="contact-val">Boa Vista, Roraima, Brasil</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">LinkedIn</span>
+                <p class="contact-val">linkedin.com/in/felipess-dev</p>
+              </div>
+              <a href="https://www.linkedin.com/in/felipess-dev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="hero-linkedin-link">Conectar</a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Seu Nome *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Ex: Maria Silva" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Seu E-mail *</label>
+                <input type="email" id="form-email" class="form-control" placeholder="Ex: maria@empresa.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Assunto</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="Ex: Proposta de Oportunidade / Automação RPA">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Mensagem *</label>
+                <textarea id="form-message" class="form-control" placeholder="Descreva sua mensagem ou proposta..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL (<dialog>)
+       ========================================================================== -->
+  <dialog id="project-modal" class="site-modal" aria-labelledby="modal-project-title">
+    <div class="modal-header">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <h3 id="modal-project-title" style="font-size: 1.25rem;">Título do Projeto</h3>
+        <span id="modal-project-badge" class="project-badge" style="position: static;">Categoria</span>
+      </div>
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Fechar Modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-image">
+        <img id="modal-project-img" src="" alt="Screenshot do Projeto">
+      </div>
+
+      <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Sobre o Projeto</h4>
+      <p id="modal-project-desc" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem;"></p>
+
+      <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Principais Funcionalidades</h4>
+      <ul id="modal-project-features" class="modal-features-list"></ul>
+
+      <h4 style="margin-bottom: 0.75rem; font-size: 1.1rem;">Tecnologias Utilizadas</h4>
+      <div id="modal-project-tags" class="project-tags"></div>
+    </div>
+
+    <div class="modal-footer">
+      <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        Ver Repositório no GitHub
+      </a>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       CERTIFICATE VIEW MODAL (<dialog>)
+       ========================================================================== -->
+  <dialog id="cert-modal" class="site-modal" aria-labelledby="cert-modal-title">
+    <div class="modal-header">
+      <div>
+        <h3 id="cert-modal-title" style="font-size: 1.15rem;">Certificado</h3>
+        <span id="cert-modal-inst" class="cert-badge" style="display: inline-block; margin-top: 0.25rem;">FIAP</span>
+      </div>
+      <button id="cert-modal-close-btn" class="modal-close-btn" aria-label="Fechar Modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <img id="cert-modal-img" class="cert-full-img" src="" alt="Imagem do Certificado">
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="site-logo">
+            <span class="logo-badge">FS</span>
+            <span class="dyn-name">Felipe dos Santos Silva</span>
+          </div>
+          <p class="footer-desc">
+            Graduando em Ciência da Computação (UERR). Focado em Automação (RPA), Linux (NixOS/Arch) e Cloud. Hospedado com orgulho no GitHub Pages.
+          </p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/felpnoo" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/felipess-dev" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> <span class="dyn-name">Felipe dos Santos Silva</span>. Todos os direitos reservados.</p>
+        <a href="#hero" class="back-to-top-btn" aria-label="Voltar ao topo">
+          <span>Voltar ao topo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
